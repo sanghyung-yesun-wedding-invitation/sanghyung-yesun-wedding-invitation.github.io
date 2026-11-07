@@ -8,12 +8,12 @@ window.WEDDING_ACCOUNTS = [
         "number": "855602-00-006231"
       },
       {
-        "owner": "정동훈",
+        "owner": "아버지 정동훈",
         "bank": "하나은행",
         "number": "306-910504-83007"
       },
       {
-        "owner": "김미경",
+        "owner": "어머니 김미경",
         "bank": "하나은행",
         "number": "306-910607-68607"
       }
@@ -28,12 +28,12 @@ window.WEDDING_ACCOUNTS = [
         "number": "1002-954-403299"
       },
       {
-        "owner": "최현모",
+        "owner": "아버지 최현모",
         "bank": "기업은행",
         "number": "534-035544-01-018"
       },
       {
-        "owner": "구금숙",
+        "owner": "어머니 구금숙",
         "bank": "기업은행",
         "number": "451-001153-02-020"
       }
