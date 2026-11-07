@@ -6,7 +6,7 @@
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-공개 주소: https://sanghyung-jung.github.io/wedding-invitation/
+공개 주소: https://sanghyung-yesun-wedding-invitation.github.io/
 로컬: http://127.0.0.1:4173/
 10번 화이트 디자인 하나만 사용하며 시안 선택 화면은 제거했습니다.
 
