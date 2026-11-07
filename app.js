@@ -23,7 +23,7 @@ ${choiceGroup('attendance','참석 여부',[['참석합니다','참석'],['참�
 <div data-attending-fields hidden><label class="rsvp-field text-field">참석 인원 <small>본인 포함</small><select name="guests">${['1명','2명','3명','4명','5명 이상'].map(x=>`<option>${x}</option>`).join('')}</select></label>
 ${choiceGroup('meal','식사 여부',[['식사합니다','식사함'],['식사하지 않습니다','식사 안 함'],['아직 정하지 못했습니다','미정']])}</div>
 
-<p class="rsvp-privacy">작성하신 내용은 예식 참석 확인과 식사 준비에만 사용합니다.</p><p class="rsvp-status" role="status" aria-live="polite"></p><button class="rsvp-submit" type="submit">참석 여부 전달하기</button></form><div class="rsvp-result" hidden tabindex="-1"><span class="result-check">✓</span><h3>참석 여부를 전송했습니다.</h3><p>소중한 마음 전해 주셔서 감사합니다.</p><button type="button" data-rsvp-done>닫기</button></div></div></dialog>`;}
+<p class="rsvp-status" role="status" aria-live="polite"></p><button class="rsvp-submit" type="submit">참석 여부 전달하기</button></form><div class="rsvp-result" hidden tabindex="-1"><span class="result-check">✓</span><h3>참석 여부를 전송했습니다.</h3><p>소중한 마음 전해 주셔서 감사합니다.</p><button type="button" data-rsvp-done>닫기</button></div></div></dialog>`;}
 function setupRsvp(){
  const modal=document.querySelector('.rsvp-dialog'),form=modal.querySelector('form'),status=modal.querySelector('.rsvp-status'),submit=form.querySelector('[type="submit"]'),conditional=form.querySelector('[data-attending-fields]');
  const updateAttendance=()=>{const attends=form.elements.attendance.value==='참석합니다';conditional.hidden=!attends;conditional.querySelectorAll('input,select').forEach(e=>{e.disabled=!attends;if(e.name==='meal')e.required=attends;});};updateAttendance();form.addEventListener('change',updateAttendance);
