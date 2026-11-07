@@ -72,5 +72,5 @@ python3 -m http.server 4173 --bind 127.0.0.1
 - 카카오 앱 ID: 1641434 (`정상형 · 최예선 청첩장`). JavaScript SDK 도메인과 제품 링크 도메인은 현재 GitHub Pages 도메인으로 등록.
 - `kakao-share.js`는 도메인 제한된 공개 JavaScript 키와 공식 SDK 2.8.4를 사용합니다. 어드민 키나 REST API 시크릿은 사용하지 않습니다.
 - ‘카카오톡으로 공유하기’는 `Kakao.Share.sendDefault`에 1200×1600 세로형 카드와 청첩장 링크를 전달합니다. 전송 대상은 사용자가 카카오 화면에서 선택합니다.
-- `assets/kakao-share-portrait.jpg`는 `tools/kakao-card.html`의 600×800 CSS 구성물을 DPR 2로 캡처한 이미지입니다. 원본 사진 전체를 contain으로 표시하고 양옆의 좁은 공간만 배경으로 채웁니다.
+- `assets/kakao-share-portrait-filled.jpg`는 `tools/kakao-card.html`의 600×800 CSS 구성물을 DPR 2로 캡처한 이미지입니다. 원본 사진을 cover로 확대해 3:4 영역을 채우며, 좌우 여백 없이 위아래 일부를 자릅니다.
 - 공유 창은 같은 세로형 이미지 전체를 표시합니다. URL 복사·붙여넣기는 별도의 OG 미리보기이며 세로형 SDK 카드와 다릅니다.

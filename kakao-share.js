@@ -43,7 +43,7 @@ function setupKakaoShare(modal, url) {
         content: {
           title: '정상형 · 최예선 결혼합니다',
           description: '2027년 1월 3일 일요일 오전 11시 30분\n빌라드지디 청담',
-          imageUrl: new URL('assets/kakao-share-portrait.jpg', url).href,
+          imageUrl: new URL('assets/kakao-share-portrait-filled.jpg', url).href,
           imageWidth: 1200,
           imageHeight: 1600,
           link: { mobileWebUrl: url, webUrl: url }
