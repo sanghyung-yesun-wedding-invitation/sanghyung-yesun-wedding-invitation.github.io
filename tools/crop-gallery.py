@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 
 root = Path(__file__).resolve().parents[1]
-crops = [(1, (178, 433, 890, 1335)), (3, (88, 386, 982, 1473)), (15, (423, 794, 596, 894))]
+crops = [(1, (176, 238, 890, 1335)), (3, (88, 386, 982, 1473)), (15, (423, 794, 596, 894))]
 for number, (x, y, width, height) in crops:
     source = root / f'assets/photo-{number:02d}.webp'
     target = root / f'assets/photo-{number:02d}-cropped.webp'
