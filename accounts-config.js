@@ -3,7 +3,7 @@ window.WEDDING_ACCOUNTS = [
     "label": "신랑측",
     "accounts": [
       {
-        "owner": "정상형",
+        "owner": "신랑 정상형",
         "bank": "국민은행",
         "number": "855602-00-006231"
       },
@@ -23,7 +23,7 @@ window.WEDDING_ACCOUNTS = [
     "label": "신부측",
     "accounts": [
       {
-        "owner": "최예선",
+        "owner": "신부 최예선",
         "bank": "우리은행",
         "number": "1002-954-403299"
       },
