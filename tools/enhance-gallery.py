@@ -4,9 +4,9 @@ from PIL import Image, ImageOps, ImageFilter
 
 root = Path(__file__).resolve().parents[1]
 settings = [
-    (1, 'assets/photo-01.webp', (176, 292, 890, 1335), 85),
-    (3, 'assets/photo-03.webp', (88, 386, 982, 1473), 85),
-    (15, 'KakaoTalk_Photo_2026-11-07-23-27-24.jpeg', (423, 794, 596, 894), 45),
+    (1, 'KakaoTalk_Photo_2026-11-17-23-28-49.jpeg', (176, 292, 890, 1335), 45),
+    (3, 'KakaoTalk_Photo_2026-11-17-23-28-08.jpeg', (88, 386, 982, 1473), 45),
+    (15, 'KakaoTalk_Photo_2026-11-07-23-27-24.jpeg', (330, 702, 700, 1050), 45),
 ]
 for number, filename, (x, y, width, height), amount in settings:
     with Image.open(root / filename) as source:

@@ -1,7 +1,7 @@
 /* New collection based on the four selected references. No audio, video or profile modules. */
 const design={id:'10',name:'일월 삼일',skin:'white'};
 const app=document.querySelector('#app');
-const photoSrc=n=>`assets/photo-${String(n).padStart(2,'0')}${[1,3,15].includes(n)?'-enhanced':''}.webp${n===1?'?v=2':''}`;
+const photoSrc=n=>`assets/photo-${String(n).padStart(2,'0')}${[1,3,15].includes(n)?'-enhanced':''}.webp${[1,3,15].includes(n)?'?v=3':''}`;
 const picture=(n,cls='',eager=false)=>`<img class="${cls}" src="${photoSrc(n)}" alt="정상형과 최예선의 웨딩 사진" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 // Rows: white studio / green & white / beige portraits / dark studio / black & pink.
 const galleryOrder=[1,3,15, 2,4,5, 10,6,13, 7,8,9, 11,14,12];
